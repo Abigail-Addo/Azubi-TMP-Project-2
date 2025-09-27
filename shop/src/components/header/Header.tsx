@@ -69,7 +69,7 @@ const Header = () => {
 
     const adminMenu = [
         <MenuItem key="dashboard" onClick={handleClose}>
-            <Link href="/dashboard">Dashboard</Link>
+            <Link href="/">Dashboard</Link>
         </MenuItem>,
         <MenuItem key="products" onClick={handleClose}>
             <Link href="/products">Products</Link>
