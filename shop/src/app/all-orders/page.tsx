@@ -19,7 +19,7 @@ const AllOrders = () => {
     }, [dispatch]);
 
     const handleViewOrder = (orderId: string) => {
-        router.push(`/orders/order-details?id=${orderId}`);
+        router.push(`/all-orders/details?id=${orderId}`);
     };
 
     return (
