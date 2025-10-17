@@ -22,7 +22,7 @@ import {
     FormControlLabel,
     Checkbox,
 } from "@mui/material";
-
+import Link from "next/link";
 interface IFormInput {
     _id: string;
     username: string;
@@ -183,6 +183,7 @@ const Users = () => {
                             width={200}
                             height={200}
                         />
+                        <Link href="https://github.com/Abigail-Addo/Azubi-TMP-Project-2.git" target='_blank' className="underline text-cyan-600" >View code on github</Link>
                         <p>{new Date().getFullYear()} Azushop. All Rights Reserved.</p>
                     </div>
                 </footer>

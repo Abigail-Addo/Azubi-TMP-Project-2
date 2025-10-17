@@ -4,7 +4,7 @@ import React from "react";
 import DefaultLayout from "../DefaultLayout";
 import Image from "next/image";
 import { FaShoppingCart, FaEye, FaHeart, FaTrash } from "react-icons/fa";
-
+import Link from "next/link";
 const Favourite = () => {
     const favourites = [
         {
@@ -81,6 +81,7 @@ const Favourite = () => {
             <footer className="h-28 border border-[#D9D9D9] bg-white">
                 <div className="container mx-auto flex items-center justify-between h-full">
                     <Image src="/assets/footer.png" alt="Payments" width={200} height={200} />
+                    <Link href="https://github.com/Abigail-Addo/Azubi-TMP-Project-2.git" target='_blank' className="underline text-cyan-600" >View code on github</Link>
                     <p>{new Date().getFullYear()} Azushop. All Rights Reserved.</p>
                 </div>
             </footer>

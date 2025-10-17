@@ -22,7 +22,7 @@ import { getProfile, updateProfile } from "@/lib/features/auth/authSlice";
 import { Controller, useForm, SubmitHandler } from "react-hook-form";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import { toast } from 'react-toastify';
-
+import Link from "next/link";
 // Form inputs
 interface IFormInput {
     username: string;
@@ -280,6 +280,7 @@ const Profile = () => {
                         width={200}
                         height={200}
                     />
+                    <Link href="https://github.com/Abigail-Addo/Azubi-TMP-Project-2.git" target='_blank' className="underline text-cyan-600" >View code on github</Link>
                     <p>{new Date().getFullYear()} Azushop. All Rights Reserved.</p>
                 </div>
             </footer>

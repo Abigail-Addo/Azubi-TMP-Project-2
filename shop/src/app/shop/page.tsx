@@ -17,7 +17,7 @@ import { useAppSelector, useAppDispatch } from "@/lib/hooks";
 import { addToCart } from "@/lib/features/cart/cartSlice";
 import { toast } from 'react-toastify';
 import { useRouter } from "next/navigation";
-
+import Link from "next/link";
 
 const Shop = () => {
     const [selectedBrands, setSelectedBrands] = useState<string[]>([]);
@@ -200,6 +200,7 @@ const Shop = () => {
                         width={200}
                         height={200}
                     />
+                    <Link href="https://github.com/Abigail-Addo/Azubi-TMP-Project-2.git" target='_blank' className="underline text-cyan-600" >View code on github</Link>
                     <p>{new Date().getFullYear()} Azushop. All Rights Reserved.</p>
                 </div>
             </footer>

@@ -7,7 +7,7 @@ import { FiChevronLeft, FiEye } from "react-icons/fi";
 import { useRouter } from "next/navigation";
 import { useAppDispatch, useAppSelector } from "@/lib/hooks";
 import { fetchOrders } from "@/lib/features/orders/orderSlice";
-
+import Link from "next/link";
 const Order = () => {
     const router = useRouter();
     const dispatch = useAppDispatch();
@@ -100,6 +100,7 @@ const Order = () => {
             <footer className="h-28 border border-[#D9D9D9] mt-10 fixed bottom-0 w-full">
                 <div className="container mx-auto flex items-center justify-between h-full">
                     <Image src="/assets/footer.png" alt="Payments" width={200} height={200} />
+                    <Link href="https://github.com/Abigail-Addo/Azubi-TMP-Project-2.git" target='_blank' className="underline text-cyan-600" >View code on github</Link>
                     <p>{new Date().getFullYear()} Azushop. All Rights Reserved.</p>
                 </div>
             </footer>

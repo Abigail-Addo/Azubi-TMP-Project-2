@@ -10,6 +10,11 @@ import { useRouter } from 'next/navigation';
 const Dashboard = () => {
   const router = useRouter();
 
+  // alert
+  React.useEffect(() => {
+    alert("Please note: Image load may be delayed due to backend service inactivity on Render.");
+  }, []);
+
   return (
     <DefaultLayout>
       <div className='w-full'>

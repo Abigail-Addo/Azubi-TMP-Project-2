@@ -8,7 +8,7 @@ import { FiChevronLeft } from 'react-icons/fi'
 import { useRouter } from "next/navigation";
 import Product from '@/components/tabs/Products'
 import CreateProduct from '@/components/tabs/CreateProduct'
-
+import Link from 'next/link'
 const Products = () => {
     const router = useRouter();
     const [activeTab, setActiveTab] = React.useState<"products" | "create products">("products");
@@ -60,6 +60,7 @@ const Products = () => {
                 <footer className='h-28 border border-[#D9D9D9] bg-white'>
                     <div className='container mx-auto flex items-center justify-between h-full'>
                         <Image src="/assets/footer.png" alt="Payments" width={200} height={200} />
+                        <Link href="https://github.com/Abigail-Addo/Azubi-TMP-Project-2.git" target='_blank' className="underline text-cyan-600" >View code on github</Link>
                         <p>{new Date().getFullYear()} Azushop. All Rights Reserved.</p>
                     </div>
                 </footer>
