@@ -269,10 +269,6 @@ const RegisterModal: React.FC<RegisterModalProps> = ({ open, handleClose }) => {
                                         {loading ? 'Loading...' : 'Register'}
                                     </button>
                                 </div>
-
-                                <p className='text-center underline flex items-center justify-center'>Already have an account?
-                                    <Link href="/signup" className='text-[#01589A] pr-6'> Login in here</Link> <MdOutlineArrowOutward />
-                                </p>
                             </div>
 
                         </form>

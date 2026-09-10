@@ -181,10 +181,6 @@ const LoginModal: React.FC<LoginModalProps> = ({ open, handleClose, }) => {
                                         {loading ? 'Loading...' : 'Login'}
                                     </button>
                                 </div>
-
-                                <p className='text-center underline flex items-center justify-center'>New customer?
-                                    <Link href="/signup" className='text-[#01589A] pr-6'> Create your account</Link> <MdOutlineArrowOutward />
-                                </p>
                             </div>
 
                         </form>
