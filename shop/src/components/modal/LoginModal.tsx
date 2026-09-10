@@ -19,7 +19,6 @@ interface IFormInput {
     email: string;
     password: string;
 }
-
 const LoginModal: React.FC<LoginModalProps> = ({ open, handleClose, }) => {
     const [showPassword, setShowPassword] = React.useState(false);
     const { loading } = useAppSelector((state) => state.userAuth)
