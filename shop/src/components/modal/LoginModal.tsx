@@ -3,8 +3,6 @@
 import React from "react";
 import { Modal, TextField, Fade, FormControl, InputLabel, OutlinedInput, InputAdornment, IconButton } from "@mui/material";
 import { IoIosClose } from "react-icons/io";
-import Link from "next/link";
-import { MdOutlineArrowOutward } from "react-icons/md";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import { Controller, SubmitHandler, useForm } from 'react-hook-form';
 import { useAppSelector, useAppDispatch } from '@/lib/hooks';
